@@ -22,6 +22,45 @@
           <target>1.8</target>
         </configuration>
       </plugin>
+      <plugin>
+           <groupId>org.apache.maven.plugins</groupId>
+           <artifactId>maven-compiler-plugin</artifactId>
+           <version>3.6.0</version>
+           <configuration>
+           <!-- put your configurations here -->
+            </configuration>
+            </plugin>
+             <plugin>
+             <groupId>org.apache.maven.plugins</groupId>
+             <artifactId>maven-surefire-plugin</artifactId>
+             <version>2.19.1</version>
+          <configuration>
+                 <suiteXmlFiles>
+                     <suiteXmlFile>testNG.xml</suiteXmlFile>
+                 </suiteXmlFiles>
+          </configuration>
+         </plugin>
     </plugins>
   </build>
+      <!-- testNG dependency -->
+       <dependencies>
+                <dependency>
+                        <groupId>org.testng</groupId>
+                        <artifactId>testng</artifactId>
+                        <version>6.10</version>
+                </dependency>
+ 
+                <dependency>
+                        <groupId>org.seleniumhq.selenium</groupId>
+                        <artifactId>selenium-java</artifactId>
+                        <version>3.0.1</version>
+                </dependency>
+ 
+ 
+                <dependency>
+                        <groupId>org.seleniumhq.selenium</groupId>
+                        <artifactId>selenium-server</artifactId>
+                        <version>3.0.1</version>
+                </dependency>
+        </dependencies>
 </project>

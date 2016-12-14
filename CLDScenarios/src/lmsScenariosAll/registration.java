@@ -13,6 +13,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -21,7 +22,7 @@ public class registration {
 	private static WebDriver driver;
 	private static Wait<WebDriver> wait;
 	
-	@BeforeTest
+	@BeforeMethod
 	 public  void preSetup(){
 		
 				System.setProperty("webdriver.chrome.driver","/Users/cleriston/Documents/Eclipse/chromedriver");
@@ -30,7 +31,6 @@ public class registration {
 			            .withTimeout(5, TimeUnit.SECONDS)
 			            .pollingEvery(1, TimeUnit.SECONDS)
 			            .ignoring(NoSuchElementException.class);
-			 	 System.out.println("Presetup");
 		}
 	
 	 @Test	//A new user register on the LMS and see start of the tutorial
