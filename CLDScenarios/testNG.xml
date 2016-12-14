@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Automated Scenario">
+<test name="LMS Test Scenarios" allow-return-values="true">
+
+<parameter name="Email" value="addyrawat@gmail.com"/>
+<parameter name="Password" value="creative456"/>
+<classes>
+	<class name="lmsScenarios.registration"/>
+
+</classes>
+
+</test>
+
+</suite>
