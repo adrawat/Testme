@@ -1,4 +1,4 @@
-package lmsScenarios;
+package lmsScenariosAll;
 
 
 import java.util.concurrent.TimeUnit;
