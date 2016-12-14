@@ -1,2 +1,2 @@
 general:
-build_dir: TestCLDScenarios
+  build_dir: TestCLDScenarios
